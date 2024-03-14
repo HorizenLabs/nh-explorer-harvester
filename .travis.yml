@@ -1,0 +1,22 @@
+os: linux
+dist: focal
+language: generic
+services:
+  - docker
+
+git:
+  depth: false
+
+env:
+  global:
+    - DOCKER_IMAGE_BUILD_NAME=nh-explorer-harvester
+    - RELEASE_BRANCH=main
+
+before_script:
+  - source ci/setup_env.sh
+
+jobs:
+  include:
+    - stage: Image Builder
+      name: "Build Docker Image"
+      script: ci/script.sh
