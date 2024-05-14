@@ -3,7 +3,7 @@ set -euo pipefail
 
 base_docker_image_name="${BASE_DOCKER_IMAGE_NAME:-python}"
 base_docker_image_tag="${BASE_DOCKER_IMAGE_TAG:-3.8-buster}"
-docker_image_build_name="${DOCKER_IMAGE_BUILD_NAME:-nh-explorer-harvester}"
+docker_image_build_name="${DOCKER_IMAGE_BUILD_NAME:-zkverify-explorer-harvester}"
 docker_hub_org="${DOCKER_HUB_ORG:-horizenlabs}"
 
 github_token="${GITHUB_TOKEN:-}"

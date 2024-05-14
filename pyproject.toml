@@ -1,5 +1,5 @@
 [project]
-name = "nh-explorer-harvester"
+name = "zkverify-explorer-harvester"
 version = "0.1.0"
 authors = [
     { name="Polkascan"},
